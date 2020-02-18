@@ -23,9 +23,9 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    delete: todoText => dispatch({
+    delete: todoId => dispatch({
       type: 'DELETE_TODO',
-      payload: todoText
+      payload: todoId
     })
   }
 }
